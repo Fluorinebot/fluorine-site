@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	new TypeIt("h2", {
-		speed: 50,
+		speed: 55,
 		startDelay: 900,
 		afterComplete: async (instance) => {
 			new TypeIt("strong", {
