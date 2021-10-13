@@ -21,10 +21,10 @@ h1 {
 }
 h2 {
 	margin: 0;
+	margin-right: 4px;
 	font-weight: 300;
 	font-size: 1.65em;
 	height: 15vh;
-	width: 30vw;
 }
 
 img {
@@ -35,10 +35,10 @@ button {
 	background-color: white;
 	font-family: "Poppins", sans-serif;
 	border: none;
-	width: 12vw;
+	width: auto;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
-	padding: 10px;
+	padding: 10px 15px;
 	border-radius: 5px;
 	font-size: 17px;
 	transition: all 0.1s ease;
@@ -54,15 +54,8 @@ button:active {
 		font-size: 10vw;
 	}
 	h2 {
-		height: 15vh;
-		width: 80vw;
+		height: 20vh;
 		font-size: 6vw;
-	}
-	button {
-		font-size: 4vw;
-		height: 5vh;
-		width: 40vw;
-		border-radius: 1vw;
 	}
 }
 @media only screen and (max-width: 500px) {
@@ -70,14 +63,7 @@ button:active {
 		font-size: 10vw;
 	}
 	h2 {
-		height: 15vh;
-		width: 80vw;
+		height: 20vh;
 		font-size: 6vw;
-	}
-	button {
-		font-size: 4vw;
-		height: 6vh;
-		width: 40vw;
-		border-radius: 1vw;
 	}
 }
