@@ -1,19 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 body {
-	width: 100vw;
-	height: 100vh;
 	background-color: #3872f2;
 	margin: 0;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	font-family: "Poppins", sans-serif;
+
+	--blue: #3872f2;
+	--darkblue: #2d62d4;
+	--darkerblue: #2753b4;
+}
+::-webkit-scrollbar {
+	display: none;
 }
 main {
-	margin-left: 10vw;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vw;
+	height: 100vh;
 }
-h1,
-h2 {
+main h1,
+main h2 {
 	color: #ffffff;
-	font-family: "Poppins", sans-serif;
 }
 h1 {
 	font-size: 3em;
@@ -23,19 +32,20 @@ h2 {
 	margin: 0;
 	margin-right: 4px;
 	font-weight: 300;
-	font-size: 1.65em;
-	height: 15vh;
+	font-size: 1.35rem;
 }
 
 img {
-	height: 15.823vh;
+	height: 15vh;
+	width: 15vh;
 }
 button {
 	font-weight: 600;
 	background-color: white;
 	font-family: "Poppins", sans-serif;
 	border: none;
-	width: auto;
+	width: fit-content;
+	color: var(--blue);
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
 	padding: 10px 15px;
@@ -49,21 +59,47 @@ button:active {
 	outline: 2px solid white;
 	transform: scale(0.9);
 }
-@media only screen and (max-width: 750px) {
-	h1 {
-		font-size: 10vw;
-	}
-	h2 {
-		height: 20vh;
-		font-size: 6vw;
-	}
+functions {
+	display: grid;
+	grid-template-columns: 30vw 30vw 30vw;
+	gap: 3vw;
+	background-color: var(--darkblue);
+	margin: 0;
+	text-align: center;
+	justify-content: center;
+	padding: 0;
 }
-@media only screen and (max-width: 500px) {
-	h1 {
-		font-size: 10vw;
+functions div {
+	margin-top: 1.5vw;
+	border-radius: 10px;
+	margin-bottom: 1.5vw;
+	width: 98%;
+	display: flex;
+	justify-self: center;
+	flex-direction: column;
+	align-items: center;
+	height: 50vh;
+	color: var(--darkerblue) !important;
+	background-color: white;
+}
+div h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 2.4rem;
+}
+div h2 {
+	width: 95%;
+}
+.material-icons {
+	margin-top: 20px;
+	margin-bottom: 5vh;
+	font-size: 7.5vh !important;
+}
+@media (max-width: 576px) {
+	functions {
+		grid-template-columns: repeat(1, 1fr);
 	}
-	h2 {
-		height: 20vh;
-		font-size: 6vw;
+	functions div {
+		height: 50vh;
 	}
 }
