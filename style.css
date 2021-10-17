@@ -10,9 +10,7 @@ body {
 	--darkblue: #2d62d4;
 	--darkerblue: #2753b4;
 }
-::-webkit-scrollbar {
-	display: none;
-}
+
 main {
 	justify-content: center;
 	display: flex;
