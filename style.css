@@ -10,15 +10,21 @@ body {
 	--darkblue: #2d62d4;
 	--darkerblue: #2753b4;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar-button {
 	display: none;
+}
+::-webkit-scrollbar-track {
+	background: white;
+}
+::-webkit-scrollbar-thumb {
+	background: #3872f2;
 }
 main {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
 	margin-left: 5vw;
-	height: 100vh;
+	height: 97.5vh;
 }
 main h1,
 main h2 {
@@ -89,6 +95,11 @@ div h1 {
 }
 div h2 {
 	width: 95%;
+}
+.gradient {
+	background: var(--blue);
+	height: 2vh;
+	background: linear-gradient(180deg, var(--blue) 0%, var(--darkblue) 100%);
 }
 .material-icons {
 	margin-top: 20px;
