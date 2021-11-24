@@ -24,7 +24,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5vw;
-	height: 97.5vh;
+	height: 100vh;
 }
 main h1,
 main h2 {
@@ -46,6 +46,7 @@ img {
 	width: 15vh;
 }
 button {
+	margin-right: 10px;
 	font-weight: 600;
 	background-color: white;
 	font-family: "Poppins", sans-serif;
@@ -111,6 +112,6 @@ div h2 {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	functions div {
-		height: 60vh;
+		height: 50vh;
 	}
 }
