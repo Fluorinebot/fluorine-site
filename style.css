@@ -5,19 +5,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: "Poppins", sans-serif;
-
-	--blue: #3872f2;
-	--darkblue: #2d62d4;
-	--darkerblue: #2753b4;
-}
-::-webkit-scrollbar-button {
-	display: none;
-}
-::-webkit-scrollbar-track {
-	background: white;
-}
-::-webkit-scrollbar-thumb {
-	background: #3872f2;
 }
 main {
 	justify-content: center;
@@ -52,7 +39,7 @@ button {
 	font-family: "Poppins", sans-serif;
 	border: none;
 	width: fit-content;
-	color: var(--blue);
+	color: #3872f2;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
 	padding: 10px 15px;
@@ -70,7 +57,7 @@ functions {
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw;
 	gap: 3vw;
-	background-color: var(--darkblue);
+	background-color: #2d62d4;
 	margin: 0;
 	text-align: center;
 	justify-content: center;
@@ -86,7 +73,7 @@ functions div {
 	flex-direction: column;
 	align-items: center;
 	height: 50vh;
-	color: var(--darkerblue) !important;
+	color: #2753b4 !important;
 	background-color: white;
 }
 div h1 {
@@ -98,7 +85,7 @@ div h2 {
 	width: 95%;
 }
 .gradient {
-	background: var(--blue);
+	background: #3872f2;
 	height: 2vh;
 	background: linear-gradient(180deg, var(--blue) 0%, var(--darkblue) 100%);
 }
