@@ -1,17 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+::-webkit-scrollbar {
+	display: none;
+}
+* {
+	overflow-x: hidden;
+}
 body {
 	background-color: #3872f2;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 main {
-	justify-content: center;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	margin-left: 5vw;
-	height: 100vh;
 }
 main h1,
 main h2 {
@@ -36,7 +40,7 @@ button {
 	margin-right: 10px;
 	font-weight: 600;
 	background-color: white;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	border: none;
 	width: fit-content;
 	color: #3872f2;
@@ -53,52 +57,182 @@ button:active {
 	outline: 2px solid white;
 	transform: scale(0.9);
 }
-functions {
-	display: grid;
-	grid-template-columns: 30vw 30vw 30vw;
-	gap: 3vw;
-	background-color: #2d62d4;
+.wave1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 	margin: 0;
-	text-align: center;
-	justify-content: center;
-	padding: 0;
 }
-functions div {
-	margin-top: 1.5vw;
-	border-radius: 10px;
-	margin-bottom: 1.5vw;
-	width: 98%;
+
+.wave1 svg {
+	position: relative;
+	display: block;
+	width: calc(119% + 1.3px);
+	height: 106px;
+}
+
+.wave1 .shape-fill {
+	fill: #49c36c;
+}
+.about {
+	padding-top: 5vh !important;
+	text-align: center;
 	display: flex;
-	justify-self: center;
 	flex-direction: column;
 	align-items: center;
-	height: 50vh;
-	color: #2753b4 !important;
-	background-color: white;
+	margin: 0;
+	padding: 0;
+	background-color: #49c36c;
+	width: 100vw;
+	height: 100vh;
 }
-div h1 {
-	margin-top: 0;
-	margin-bottom: 10px;
-	font-size: 2.4rem;
+header {
+	display: flex;
+	justify-content: center;
+	padding-left: 5vw;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
 }
-div h2 {
-	width: 95%;
+.why {
+	transition: background-color 0.15s ease-in-out;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	border-radius: 5%;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 20vw;
+	height: 35vh;
+	color: white;
 }
-.gradient {
-	background: #3872f2;
-	height: 2vh;
-	background: linear-gradient(180deg, var(--blue) 0%, var(--darkblue) 100%);
+.why:hover {
+	background-color: rgba(0, 0, 0, 0.7);
 }
 .material-icons {
-	margin-top: 20px;
-	margin-bottom: 5vh;
-	font-size: 7.5vh !important;
+	font-size: 5em !important;
 }
-@media (max-width: 576px) {
-	functions {
-		grid-template-columns: repeat(1, 1fr);
+list {
+	margin-top: 20vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5vw;
+}
+.why p {
+	width: 90%;
+	font-size: 1.2em;
+	margin: 0;
+}
+.why h1 {
+	font-size: 2.2em;
+}
+.wave2 {
+	position: absolute;
+	bottom: -105vh;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.wave2 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 70px;
+}
+
+.wave2 .shape-fill {
+	fill: #21201e;
+}
+footer {
+	background-color: #21201e;
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+footer > div {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+footer > div > a {
+	margin: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+@media only screen and (max-width: 1750px) {
+	.why p {
+		font-size: 1em;
 	}
-	functions div {
-		height: 50vh;
+}
+@media only screen and (min-width: 2560px) {
+	.why p {
+		font-size: 1.8em;
+	}
+	.why h1 {
+		font-size: 3em;
+	}
+	.material-icons {
+		font-size: 8em !important;
+	}
+}
+@media only screen and (max-width: 1550px) {
+	.why p {
+		font-size: 0.8em;
+	}
+	.why h1 {
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	.why p {
+		font-size: 0.7em;
+	}
+	.why h1 {
+		font-size: 1.5em;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	list {
+		margin-top: 0;
+		grid-template-columns: 90vw;
+	}
+	.material-icons {
+		font-size: 3em !important;
+	}
+	.why {
+		width: 100%;
+	}
+	.why h1 {
+		height: 20% !important;
+		margin-bottom: 0 !important;
+		margin-top: 0 !important;
+	}
+	.about h1 {
+		margin-bottom: 3vh;
+		height: 10%;
+		font-size: 2em;
+	}
+	.about {
+		height: 150vh;
+	}
+	.why p {
+		font-size: 1em;
+	}
+	.wave2 {
+		bottom: -155vh;
 	}
 }
