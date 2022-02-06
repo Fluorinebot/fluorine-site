@@ -205,6 +205,14 @@ footer > div > a {
 		font-size: 1.5em;
 	}
 }
+@media only screen and (aspect-ratio: 9/16) {
+	.wave2 {
+		bottom: -110vh;
+	}
+	.wave1 {
+		bottom: -5vh;
+	}
+}
 @media only screen and (max-width: 1000px) {
 	list {
 		margin-top: 0;
