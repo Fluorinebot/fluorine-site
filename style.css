@@ -78,7 +78,6 @@ button:active {
 	fill: #49c36c;
 }
 .about {
-	padding-top: 5vh !important;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -88,6 +87,9 @@ button:active {
 	background-color: #49c36c;
 	width: 100vw;
 	height: 100vh;
+}
+.about h1 {
+	margin-top: 5vh;
 }
 header {
 	display: flex;
