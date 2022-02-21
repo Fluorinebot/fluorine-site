@@ -57,34 +57,17 @@ button:active {
 	outline: 2px solid white;
 	transform: scale(0.9);
 }
-.wave1 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	margin: 0;
-}
-
-.wave1 svg {
-	position: relative;
-	display: block;
-	width: calc(119% + 1.3px);
-	height: 106px;
-}
-
-.wave1 .shape-fill {
-	fill: #49c36c;
-}
 .about {
+	background-image: url('./wave2.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	background-color: #49c36c;
 	width: 100vw;
 	height: 100vh;
 }
@@ -92,7 +75,10 @@ button:active {
 	margin-top: 5vh;
 }
 header {
-	background-color: #3872f2;
+	background-image: url('./wave1.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	padding-left: 5vw;
@@ -133,25 +119,6 @@ list {
 }
 .why h1 {
 	font-size: 2.2em;
-}
-.wave2 {
-	position: absolute;
-	bottom: -105vh;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-}
-
-.wave2 svg {
-	position: relative;
-	display: block;
-	width: calc(100% + 1.3px);
-	height: 70px;
-}
-
-.wave2 .shape-fill {
-	fill: #21201e;
 }
 footer {
 	background-color: #21201e;
